@@ -8,7 +8,7 @@
       "scripts": ["background.js"]
     }
   },
-  "icons": { "16": "eye_16.png", "128": "eye_128.png" },
+  "icons": { "128": "cat-icon-128.png" },
   "permissions" : [
      "background", "serial", "storage"
   ]
