@@ -100,8 +100,9 @@ chrome.tabs.onRemoved.addListener(function(tabId, removeInfo) {
 });
 
 chrome.runtime.onMessage.addListener(function(msg, _, sendResponse) {
-	if (msg.count !== undefined) {
-		sendCmd([1, 1, msg.count > 0 ? 1 : 0]);
+	// commands
+	if (msg.active !== undefined) {
+		sendCmd([1, 1, msg.active ? 1 : 0]);
 	}
 });
 

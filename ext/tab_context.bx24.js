@@ -1,9 +1,9 @@
 //console.log('executed content.js')
 
 document.querySelector('body').addEventListener('click', function () {
-	chrome.runtime.sendMessage({count: 1});
+	chrome.runtime.sendMessage({active: true});
 	setTimeout(function () {
-		chrome.runtime.sendMessage({count: 0});
+		chrome.runtime.sendMessage({active: false});
 	}, 15000);
 });
 
