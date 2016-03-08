@@ -1,0 +1,15 @@
+{
+  "name": "Cat App",
+  "description": "",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "eye_16.png", "128": "eye_128.png" },
+  "permissions" : [
+     "background", "serial", "storage"
+  ]
+}
